@@ -18,4 +18,5 @@ Copy "case-fan.service" to "/etc/systemd/system": `sudo cp case-fan.service /etc
 
 Reload systemd daemons: `sudo systemctl daemon-reload`  
 Start the service: `sudo systemctl start case-fan`  
+Check status of the service: `sudo systemctl status case-fan`  
 Enable the service (so it will start on boot): `sudo systemctl enable case-fan`

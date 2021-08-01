@@ -1,3 +1,7 @@
+# Place this file in "/etc/systemd/system/" and make sure the owner is root.
+# Point "ExecStart" to "case_fan.sh" below and change the working directory if needed.
+# Change "User=" to your username
+
 [Unit]
 Description=Case Fan Script
 After=syslog.target

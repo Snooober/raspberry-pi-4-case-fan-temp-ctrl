@@ -1,0 +1,14 @@
+[Unit]
+Description=Case Fan Script
+After=syslog.target
+
+[Service]
+Type=simple
+ExecStart=/home/ubuntu/case-fan/case_fan.sh
+WorkingDirectory=/home/ubuntu/case-fan
+Restart=on-failure
+RestartSec=10
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target
